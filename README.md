@@ -1,65 +1,77 @@
-# Phase 1 Project
-
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+# MOVIE STUDIOS ANALYSIS
+BY: Samuel Gichanga
 
 ## Project Overview
+Use exploratory data analysis to generate insights for a business stakeholder.
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
-
-### Business Problem
-
+## Business Problem
 Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-### The Data
+## Aims and objectives of the Project.
+1. To determine which genres were most profitable.
+2. To determine which release months were most profitable.
+3. To determine what size of the movies were the most popular.
+4. To determine what size of the movies were the most profitable.
 
-In the folder `zippedData` are movie datasets from:
+## The questions answered by the analysis include.
+1. Which genres were the most profitable?
+2. Which release months were most profitable?
+3. what size of the movies were the most popular?
+4. What size of the movies were the most profitable?
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Data.
+Three data sets were used and are briefly explained below;
+1. imdb.title.basics - contains basic information of the movie titles, this include; primary title, original title, start year, runtime in minutes and genres.
+2. imdb.title.ratings - contains information about the votes casted on each movie title and their rating. The info in this data set include; averagerating and numvotes.
+3. tn.movie_budgets - contains information about the movie budget, the information include; movie, production budget, domestic gross and worldwide gross.
+## Methods used.
+Exploratory data analysis was used. the following steps were followed;
+- understanding the business problem.
+- understanding the data sets presented.
+- developing the business questions.
+- deciding which data sets to use.
+- importing the required libraries.
+- loading the datasets.
+- data understanding.
+- data preparation.
+- data cleaning.
+- data analysis.
+- data visualization.
+- answering the business questions.
+- making conclusions and recommendations.
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+## Results of the analysis.
+### Which genres were the most profitable?
+Animation, adventure and Sci-Fi genres are the leading genres in profit margin as displayed below.
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+![My image](images/profit_genre.png)
 
-## Deliverables
+### Which release months were most profitable?
+May, june, july were the most profitable release months respectively as displayed below.
+![My image](images/profit_release_month.png)
 
-There are three deliverables for this project:
+### what size of the movies were the most popular?
+The long movies that is the movies with 150 or more minutes are the most popular. Followed by the medium sized movies with minutes between 100 to 150 minutes. lastly the short movies with 100 minutes or below are the less popular as displayed below.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+![My image](images/popularity_movie_size.png)
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+### What size of the movies were the most profitable?
+The long movies that is the movies with 150 or more minutes are the most profitable. Followed by the medium sized movies with minutes between 100 to 150 minutes. lastly the short movies with 100 minutes or below are the less profitable as displayed below.
 
-### Key Points
+![My image](images/profit_movie_size.png)
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+## Conclusion and recommendations.
+1. According to the analysis of the data, animation, adventure and Sci-Fi genres are the leading genres in profit margin. Hence Microsoft should consider to produce movies with the three genres (animation, adventure and Sci-Fi) in the new movie studio.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+2. According to the analysis , May, june, july were the most profitable release months respectively, hence Microsoft should consider to make the new release of the movies in the months of May, june, july since they are the most profitable months.
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+3. According to the results of the analysis, the long movies (150 minutes and above) were that most popular and most profitable hence Microsoft should consider producing movies that are 150 minutes or more long.
 
-## Getting Started
+## Further analysis.
+Further analysis can be done to determine the relationship between the rating and profit, this will help to know if the movies with the high rating were profitable or what kind of relationship is there between rating and profitability of a movie.
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+## Limitation.
+During the calculation of the profit, only the production budget was included, the marketing and the selling cost was not included.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
-
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+## For more information.
+Get the full data analysis in the 
