@@ -74,4 +74,4 @@ Further analysis can be done to determine the relationship between the rating an
 During the calculation of the profit, only the production budget was included, the marketing and the selling cost was not included.
 
 ## For more information.
-Get the full data analysis in the 
+Get the full data analysis in the notebook : https://github.com/Samuelgichanga/dsc-phase-1-project/blob/master/student.ipynb 
